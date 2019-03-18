@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">WeChat</string>
+    <string name="weixin">微信</string>
+    <string name="addressList">通讯录</string>
+    <string name="find">发现</string>
+    <string name="set">我</string>
+
+    <style name="radioStyle">
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+
+    <!--搜索框-->
+    <!--标题与NavigationIcon的距离-->
+    <style name="Toolbar.MyStyle" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+    </style>
+
+    <!--搜索框-->
+    <!--Toolbar标题文字大小-->
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+
+    <!--搜索框-->
+    <style name="AppTheme.NoActionBar2" parent="AppTheme">
+        <item name="colorPrimary">#D33A31</item>
+        <item name="colorPrimaryDark">#D33A31</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--设置menu中item的图标颜色-->
+        <item name="android:textColorSecondary">#ffffff</item>
+        <item name="searchViewStyle">@style/Widget.SearchView</item>
+    </style>
+        <!--引入SearchView的自定义样式-->
+    <style name="Widget.SearchView" parent="Widget.AppCompat.SearchView">
+        <!--修改搜索框提示文字-->
+        <item name="defaultQueryHint">搜索本地歌曲</item>
+        <!--修改打开搜索框的搜索按钮的图标-->
+        <!--<item name="searchIcon">@mipmap/search</item>-->
+        <!--修改搜索框左边的搜索按钮图标-->
+        <item name="searchHintIcon">@null</item>
+    </style>
+
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio0"
+            style="@style/radioStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+
+            android:drawableTop="@drawable/tab_weixin_selector"
+            android:text="@string/weixin" />
+
+        <RadioButton
+
+            android:id="@+id/radio1"
+            style="@style/radioStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/tab_address_selector"
+            android:text="@string/addressList" />
+
+
+        <RadioButton
+            android:id="@+id/radio2"
+            style="@style/radioStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/tab_find_selector"
+            android:text="@string/find" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            style="@style/radioStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/tab_set_selector"
+            android:text="@string/set" />
+    </RadioGroup>
+
+</LinearLayout>
